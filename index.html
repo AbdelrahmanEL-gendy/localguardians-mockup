@@ -3,11 +3,11 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Local Guardians — Independent Home Care. More Choice. Better Value.</title>
-<meta name="description" content="Independent home care management. We don't employ carers. We help you choose the right people and get more from your funding." />
+<title>Local Guardians — Home Care Your Way. Australia wide.</title>
+<meta name="description" content="Independent home care management. You choose your carers, we handle the rest. Local Care Advisors across QLD, VIC and NSW." />
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -20,15 +20,13 @@
       <span class="logo__text">Local Guardians</span>
     </a>
     <nav class="nav__links" aria-label="Primary">
-      <a href="#how">How it works</a>
-      <a href="#pricing">Pricing</a>
+      <a href="#services">What we do</a>
       <a href="#why">Why us</a>
-      <a href="#about">About</a>
-      <a href="#contact">Contact</a>
+      <a href="#how">How it works</a>
+      <a href="#advice">Advice &amp; Support</a>
     </nav>
     <div class="nav__cta">
-      <a href="tel:" class="btn btn--ghost">Call us</a>
-      <a href="#contact" class="btn btn--primary">Speak to a Care Advisor</a>
+      <a href="#contact" class="btn btn--primary btn--pill">Enquire Now</a>
     </div>
     <button class="nav__burger" aria-label="Menu">
       <span></span><span></span><span></span>
@@ -40,217 +38,306 @@
 <section class="hero">
   <div class="container hero__inner">
     <div class="hero__copy">
-      <p class="eyebrow">Australian home care, reimagined</p>
-      <h1>Independent home care.<br><span class="accent">More choice. Better value.</span></h1>
-      <p class="hero__sub">We don't employ carers. We help you choose the right people and get more from your funding.</p>
+      <h1>Home care <em>your way</em></h1>
+      <p class="hero__sub">Your loved one deserves personalised, quality, reliable home care. Our experienced local Care Advisors help them keep living independently, with people they choose.</p>
 
-      <ul class="hero__bullets">
-        <li><span class="dot"></span>Local Care Advisors, no call centres</li>
-        <li><span class="dot"></span>You choose your support workers</li>
-        <li><span class="dot"></span>More of your funding goes to care</li>
-      </ul>
+      <form class="hero__finder" onsubmit="return false;">
+        <label for="suburb" class="visually-hidden">Enter your suburb or area</label>
+        <input id="suburb" type="text" placeholder="Enter your suburb or area" />
+        <button type="submit" class="btn btn--dark btn--pill">Find care</button>
+      </form>
 
-      <div class="hero__ctas">
-        <a href="#contact" class="btn btn--primary btn--large">Speak to a Care Advisor</a>
-        <a href="#how" class="btn btn--text">How it works
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
-        </a>
-      </div>
+      <a href="#how" class="hero__link">Read our latest news reports
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+      </a>
     </div>
 
     <div class="hero__visual">
-      <div class="hero__image">
-        <img src="img/hero.jpg"
-             alt="Older Australian with their Care Advisor" />
-      </div>
-      <div class="hero__card hero__card--1">
-        <div class="hero__card__num">19,000+</div>
-        <div class="hero__card__label">care hours delivered<br>every month</div>
-      </div>
-      <div class="hero__card hero__card--2">
-        <div class="stars">★★★★★</div>
-        <div class="hero__card__label"><strong>4.8</strong> on Google</div>
-      </div>
+      <img src="img/hero.jpg" alt="Local Care Advisor with a client in their home" />
     </div>
   </div>
 
-  <div class="container trust-bar">
-    <span>Supporting Australians across QLD, VIC, NSW</span>
-    <span>·</span>
-    <span>Rated 4.8 on Google</span>
-    <span>·</span>
-    <span>One dedicated point of contact</span>
+  <!-- Marquee trust bar -->
+  <div class="marquee">
+    <div class="marquee__track">
+      <span>Highest regulatory ratings</span><span class="dot-sep">•</span>
+      <span>Care for 19,000+ older Australians</span><span class="dot-sep">•</span>
+      <span>Recommended by 95% of our clients</span><span class="dot-sep">•</span>
+      <span>3,000+ trained Care Professionals</span><span class="dot-sep">•</span>
+      <span>Highest regulatory ratings</span><span class="dot-sep">•</span>
+      <span>Care for 19,000+ older Australians</span><span class="dot-sep">•</span>
+      <span>Recommended by 95% of our clients</span><span class="dot-sep">•</span>
+      <span>3,000+ trained Care Professionals</span><span class="dot-sep">•</span>
+    </div>
   </div>
 </section>
 
-<!-- HOW IT WORKS -->
-<section class="section" id="how">
+<!-- POPULAR SERVICES -->
+<section class="section" id="popular">
   <div class="container">
-    <div class="section__head">
-      <p class="eyebrow">How it works</p>
-      <h2>Simple and flexible</h2>
-      <p class="section__lede">A clear process from day one. No surprises, no hidden layers.</p>
-    </div>
-
-    <div class="steps">
-      <article class="step">
-        <div class="step__num">01</div>
-        <h3>We understand your needs</h3>
-        <p>A local Care Advisor works with you to understand your goals, your situation, and the care you actually want.</p>
+    <h2 class="section__title section__title--center">Popular Services</h2>
+    <div class="pop-services">
+      <article class="pop-card pop-card--lime">
+        <h3>Dementia Care</h3>
+        <p>Caring for someone with dementia takes a physical, emotional and mental toll. Be with years of experience, Local Guardians is here to help you and the ones you love.</p>
+        <a href="#" class="pop-card__link">
+          <span class="circle-arrow">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+          </span>
+          Discover more
+        </a>
       </article>
-      <article class="step">
-        <div class="step__num">02</div>
-        <h3>You choose your support workers</h3>
-        <p>Use your own workers, or we help you find the right people locally. You stay in control.</p>
+      <article class="pop-card pop-card--lilac">
+        <h3>Personal Care</h3>
+        <p>Whether it's supporting a bath, dressing, or daily routines, our Care Professionals help you with the dignity and warmth your parent or partner deserves.</p>
+        <a href="#" class="pop-card__link">
+          <span class="circle-arrow">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+          </span>
+          Discover more
+        </a>
       </article>
-      <article class="step">
-        <div class="step__num">03</div>
-        <h3>We manage everything behind the scenes</h3>
-        <p>Funding, payments, compliance, and support. Handled quietly so you can focus on living well.</p>
+      <article class="pop-card pop-card--sky">
+        <h3>Live-In Care</h3>
+        <p>When care needs grow, live-in help means your loved one can stay in the home they love. Companionship, safety, and familiar routines, without the move.</p>
+        <a href="#" class="pop-card__link">
+          <span class="circle-arrow">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+          </span>
+          Discover more
+        </a>
       </article>
     </div>
   </div>
 </section>
 
-<!-- WHY -->
-<section class="section section--tinted" id="why">
+<!-- OUR CARE SERVICES -->
+<section class="section" id="services">
   <div class="container">
-    <div class="section__head">
-      <p class="eyebrow">Why Local Guardians</p>
-      <h2>We don't provide care. We make sure you get the right care.</h2>
+    <div class="services-head">
+      <h2>Our Home Care Services</h2>
+      <p>We can help you make an informed, compassionate choice for your loved one, with bespoke packages to suit your domiciliary care needs.</p>
     </div>
 
-    <div class="compare">
-      <div class="compare__head">
-        <div></div>
-        <div class="compare__col">Traditional providers</div>
-        <div class="compare__col compare__col--ours">Local Guardians</div>
-      </div>
-
-      <div class="compare__row">
-        <div class="compare__label">Workforce</div>
-        <div class="compare__cell">Use their own carers</div>
-        <div class="compare__cell compare__cell--ours">You choose your carers</div>
-      </div>
-      <div class="compare__row">
-        <div class="compare__label">Support model</div>
-        <div class="compare__cell">Call centres</div>
-        <div class="compare__cell compare__cell--ours">Local Care Advisor</div>
-      </div>
-      <div class="compare__row">
-        <div class="compare__label">Flexibility</div>
-        <div class="compare__cell">Limited flexibility</div>
-        <div class="compare__cell compare__cell--ours">Flexible support options</div>
-      </div>
-      <div class="compare__row">
-        <div class="compare__label">Cost</div>
-        <div class="compare__cell">Higher cost structures</div>
-        <div class="compare__cell compare__cell--ours">Better value, more care</div>
-      </div>
+    <div class="service-grid">
+      <article class="service-card">
+        <div class="service-card__icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11l9-8 9 8"/><path d="M5 10v10h14V10"/></svg>
+        </div>
+        <h3>Home Care</h3>
+        <ul>
+          <li>Companionship</li>
+          <li>Home Help &amp; Housekeeping</li>
+          <li>Personal Care</li>
+          <li>Overnight Care</li>
+          <li>Daytime Care</li>
+          <li>Respite Care</li>
+        </ul>
+      </article>
+      <article class="service-card">
+        <div class="service-card__icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-4.5-7-11a5 5 0 0 1 10 0 5 5 0 0 1 10 0c0 6.5-7 11-7 11"/></svg>
+        </div>
+        <h3>Specialist Care</h3>
+        <ul>
+          <li>Dementia</li>
+          <li>Cancer</li>
+          <li>Parkinson's</li>
+          <li>Neurological</li>
+          <li>Palliative</li>
+          <li>Arthritis and Mobility</li>
+        </ul>
+      </article>
+      <article class="service-card">
+        <div class="service-card__icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+        </div>
+        <h3>Health &amp; Complex Care</h3>
+        <ul>
+          <li>Fall Care</li>
+          <li>Catheter</li>
+          <li>Stoma</li>
+          <li>Simple Wound Care</li>
+          <li>Vital Signs Monitoring</li>
+          <li>Diabetes Monitoring</li>
+        </ul>
+      </article>
+      <article class="service-card service-card--accent">
+        <div class="service-card__tag">Available in select locations</div>
+        <div class="service-card__icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-6 9 6v12H3z"/><path d="M9 21V12h6v9"/></svg>
+        </div>
+        <h3>Live-in Care in your own home</h3>
+        <p class="service-card__blurb">When your loved one's care needs grow, they can stay at home. Independent, with people they trust, with a Care Professional matching their rhythm and routine.</p>
+      </article>
     </div>
   </div>
 </section>
 
-<!-- PRICING -->
-<section class="section" id="pricing">
+<!-- AWARD / TRUST STRIP -->
+<section class="section section--tinted" id="awards">
   <div class="container">
-    <div class="section__head">
-      <p class="eyebrow">Pricing</p>
-      <h2>Clear and transparent</h2>
-      <p class="section__lede">No hidden margins. More of your funding goes to your actual care.</p>
+    <h2 class="section__title section__title--center">Award-winning service you can trust</h2>
+    <div class="awards">
+      <div class="award-card"><strong>HCP Provider</strong><span>of the Year 2025</span></div>
+      <div class="award-card"><strong>Top 20</strong><span>home care providers 2026</span></div>
+      <div class="award-card"><strong>Princess Royal</strong><span>Training Award</span></div>
+      <div class="award-card award-card--accent"><strong>95%</strong><span>of clients recommend us</span></div>
+      <div class="award-card"><strong>HCA</strong><span>Winner 2025</span></div>
     </div>
-
-    <div class="pricing">
-      <div class="price-card">
-        <div class="price-card__top">
-          <span class="price-card__tag">Care management</span>
-          <div class="price-card__amount">10<span>%</span></div>
-          <p class="price-card__note">of your funding (government set)</p>
-        </div>
-      </div>
-      <div class="price-card">
-        <div class="price-card__top">
-          <span class="price-card__tag">Administration</span>
-          <div class="price-card__amount">10<span>%</span></div>
-          <p class="price-card__note">on third-party services</p>
-        </div>
-      </div>
-      <div class="price-card price-card--accent">
-        <div class="price-card__top">
-          <span class="price-card__tag">Hidden margins</span>
-          <div class="price-card__amount">0<span></span></div>
-          <p class="price-card__note">none, ever</p>
-        </div>
-      </div>
-    </div>
-
-    <p class="pricing__foot">See a simple example on the <a href="#">pricing & fees page</a>.</p>
-  </div>
-</section>
-
-<!-- TRUST -->
-<section class="section section--tinted" id="trust">
-  <div class="container trust">
-    <div class="trust__copy">
-      <p class="eyebrow">Trust</p>
-      <h2>Local, responsive, accountable</h2>
-      <p class="section__lede">You'll have one dedicated Care Advisor who knows your area, responds quickly, and helps you make informed decisions.</p>
-      <ul class="check-list">
-        <li>Knows your area</li>
-        <li>Responds quickly</li>
-        <li>Helps you make informed decisions</li>
-      </ul>
-      <a href="#contact" class="btn btn--primary">Meet your local advisor</a>
-    </div>
-    <div class="trust__visual">
-      <img src="img/trust.jpg"
-           alt="Local Care Advisor with a client in their home" />
+    <div class="awards__cta">
+      <a href="#" class="btn btn--outline btn--pill">View all</a>
     </div>
   </div>
 </section>
 
-<!-- CONTROL -->
-<section class="section" id="control">
+<!-- WHY US / FINDING THE PERFECT MATCH -->
+<section class="section" id="why">
   <div class="container">
-    <div class="section__head">
-      <p class="eyebrow">Control</p>
-      <h2>You stay in control</h2>
-      <p class="section__lede">You're not locked into a provider's model. We support you to choose what works best.</p>
-    </div>
-    <div class="control-grid">
-      <div class="control-card">
-        <div class="control-card__icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 7L9 18l-5-5"/></svg>
-        </div>
-        <h3>Not locked into a provider's carers</h3>
-        <p>Keep working with the people you already trust.</p>
+    <p class="eyebrow eyebrow--center">Why us?</p>
+    <div class="why-grid">
+      <div class="why-grid__img why-grid__img--tall">
+        <img src="img/wheelchair-smile.jpg" alt="Older client smiling with their Care Professional" />
       </div>
-      <div class="control-card">
-        <div class="control-card__icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 7L9 18l-5-5"/></svg>
-        </div>
-        <h3>No fixed service lists</h3>
-        <p>Build the support that actually fits your life.</p>
+      <div class="why-grid__copy">
+        <h2>Finding the <em>perfect match</em></h2>
+        <p>At Local Guardians, care is more than a service. It's a relationship. We carefully match every client with a Care Professional who shares their values, routines, and quality care. Every visit's built on trust, rhythm, and the meaningful connection that makes your loved one feel genuinely looked after.</p>
+        <a href="#" class="btn btn--dark btn--pill">Discover more</a>
       </div>
-      <div class="control-card">
-        <div class="control-card__icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 7L9 18l-5-5"/></svg>
-        </div>
-        <h3>No bundled pricing</h3>
-        <p>Pay for what you use. See every dollar clearly.</p>
+      <div class="why-grid__img">
+        <img src="img/match.jpg" alt="Care Advisor meeting with family at home" />
       </div>
     </div>
   </div>
 </section>
 
-<!-- FINAL CTA -->
-<section class="cta" id="contact">
-  <div class="container cta__inner">
-    <h2>Speak to someone who understands your area.</h2>
-    <p>A local Care Advisor will get back to you, usually the same day.</p>
-    <div class="cta__buttons">
-      <a href="tel:" class="btn btn--primary btn--large">Call us</a>
-      <a href="#" class="btn btn--outline btn--large">Request a call back</a>
+<!-- TESTIMONIAL -->
+<section class="testimonial">
+  <div class="container testimonial__inner">
+    <div class="testimonial__img">
+      <img src="img/wheelchair-back.jpg" alt="Client with Care Professional" />
+    </div>
+    <div class="testimonial__quote">
+      <div class="testimonial__mark">&ldquo;</div>
+      <blockquote>
+        Local Guardians provide first class <em>care</em>. My Care Professionals are patient, kind and very <em>reliable</em>. I am very happy with the service they provide.
+      </blockquote>
+      <cite>Real Client</cite>
+      <div class="testimonial__dots">
+        <button aria-label="Previous" class="testimonial__dot">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg>
+        </button>
+        <button aria-label="Next" class="testimonial__dot">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg>
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- REGULATED BY -->
+<section class="section" id="regulated">
+  <div class="container">
+    <h2 class="section__title section__title--center">Providing Quality Care Regulated By</h2>
+    <div class="regulators">
+      <div class="regulator">
+        <div class="regulator__dot regulator__dot--blue"></div>
+        <div>
+          <strong>Aged Care</strong>
+          <span>Quality &amp; Safety Commission</span>
+        </div>
+      </div>
+      <div class="regulator">
+        <div class="regulator__dot regulator__dot--teal"></div>
+        <div>
+          <strong>Home Care</strong>
+          <span>Standards Inspectorate</span>
+        </div>
+      </div>
+      <div class="regulator">
+        <div class="regulator__dot regulator__dot--green"></div>
+        <div>
+          <strong>NDIS</strong>
+          <span>Quality &amp; Safeguards</span>
+        </div>
+      </div>
+      <div class="regulator">
+        <div class="regulator__dot regulator__dot--orange"></div>
+        <div>
+          <strong>Department of Health</strong>
+          <span>&amp; Aged Care</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- GET IN TOUCH CTA -->
+<section class="touch" id="contact">
+  <div class="container touch__inner">
+    <h2>Get in touch <em>today</em><br>to see how we can help</h2>
+    <a href="#" class="btn btn--dark btn--pill btn--large">Get in touch</a>
+  </div>
+</section>
+
+<!-- PARTNERS -->
+<section class="section" id="partners">
+  <div class="container">
+    <h2 class="section__title section__title--center">Our Partners</h2>
+    <div class="partners">
+      <div class="partner">Alzheimer's Australia</div>
+      <div class="partner">Parkinson's Australia</div>
+      <div class="partner">Home Care Association</div>
+      <div class="partner">Palliative Care Australia</div>
+    </div>
+    <div class="awards__cta">
+      <a href="#" class="btn btn--outline btn--pill">View All</a>
+    </div>
+  </div>
+</section>
+
+<!-- NEWS -->
+<section class="section section--tinted" id="news">
+  <div class="container">
+    <h2 class="section__title">News &amp; Events</h2>
+    <div class="news-grid">
+      <article class="news-card">
+        <div class="news-card__img">
+          <img src="img/advisor.jpg" alt="Care Advisor on site visit" />
+        </div>
+        <h3>Scam Awareness</h3>
+        <a href="#" class="pop-card__link">
+          <span class="circle-arrow circle-arrow--green">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+          </span>
+          Discover more
+        </a>
+      </article>
+      <article class="news-card">
+        <div class="news-card__img news-card__img--ft">
+          <span class="ft">FINANCIAL TIMES</span>
+          <span class="ft-sub">Australia Best Employers 2026</span>
+        </div>
+        <h3>Local Guardians named on Financial Times Best Employers 2026</h3>
+        <a href="#" class="pop-card__link">
+          <span class="circle-arrow circle-arrow--green">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+          </span>
+          Discover more
+        </a>
+      </article>
+      <article class="news-card">
+        <div class="news-card__img">
+          <img src="img/medication.jpg" alt="Care Professional helping with medication" />
+        </div>
+        <h3>Home Care Awards 2026</h3>
+        <a href="#" class="pop-card__link">
+          <span class="circle-arrow circle-arrow--green">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+          </span>
+          Discover more
+        </a>
+      </article>
     </div>
   </div>
 </section>
@@ -263,26 +350,49 @@
         <span class="logo__mark">LG</span>
         <span class="logo__text">Local Guardians</span>
       </a>
-      <p>Independent home care management for Australians. More choice, better value, local Care Advisors.</p>
+      <a href="#contact" class="btn btn--light btn--pill">Sign up to our newsletter</a>
+      <div class="footer__phone">
+        <strong>1800 123 456</strong>
+        <span>Calls may be monitored<br>or recorded for quality and training purposes.</span>
+      </div>
     </div>
     <div class="footer__col">
-      <h4>Company</h4>
-      <a href="#">About</a>
-      <a href="#">How it works</a>
-      <a href="#">Our approach</a>
-      <a href="#">Contact</a>
+      <h4>What We Do</h4>
+      <a href="#">Domiciliary Care</a>
+      <a href="#">Home Help &amp; Housekeeping</a>
+      <a href="#">Personal Care</a>
+      <a href="#">Healthcare</a>
+      <a href="#">Specialist Care</a>
+      <a href="#">Dementia</a>
+      <a href="#">Cancer</a>
+      <a href="#">Parkinson's</a>
+      <a href="#">Palliative</a>
     </div>
     <div class="footer__col">
-      <h4>Resources</h4>
-      <a href="#">FAQ</a>
-      <a href="#">Blog</a>
-      <a href="#">Knowledge base</a>
+      <h4>How It Works</h4>
+      <a href="#">The Initial Chat</a>
+      <a href="#">Care Consultation</a>
+      <a href="#">Care Professional Introductions</a>
+      <a href="#">Your Loved One's Care Begins</a>
     </div>
     <div class="footer__col">
-      <h4>Regions</h4>
-      <a href="#">QLD</a>
-      <a href="#">VIC</a>
-      <a href="#">NSW</a>
+      <h4>Locations</h4>
+      <a href="#">Brisbane</a>
+      <a href="#">Gold Coast</a>
+      <a href="#">Melbourne</a>
+      <a href="#">Sydney</a>
+      <a href="#">Newcastle</a>
+      <a href="#">Perth</a>
+      <a href="#">Adelaide</a>
+    </div>
+    <div class="footer__col">
+      <h4>Enquire Now</h4>
+      <a href="#">Contact Us</a>
+      <a href="#">Care Promise</a>
+      <a href="#">Privacy Policy</a>
+      <h4 class="footer__col__h4--space">Why Us</h4>
+      <a href="#">Advice &amp; Support</a>
+      <a href="#">Apply to be a Care Professional</a>
     </div>
   </div>
   <div class="container footer__foot">
